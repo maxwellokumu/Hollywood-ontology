@@ -1,0 +1,283 @@
+@prefix : <urn:webprotege:ontology:11087366-46c0-4b4d-9fe9-6c0e948d531e#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <urn:webprotege:ontology:11087366-46c0-4b4d-9fe9-6c0e948d531e> .
+
+<urn:webprotege:ontology:11087366-46c0-4b4d-9fe9-6c0e948d531e> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  urn:webprotege:ontology:11087366-46c0-4b4d-9fe9-6c0e948d531e#actedIn
+:actedIn rdf:type owl:ObjectProperty ;
+         rdfs:domain <http://webprotege.stanford.edu/RBtw96Dpf96wQWdVk0DMSyX> ;
+         rdfs:range <http://webprotege.stanford.edu/RBK2sbOvO3K1BtepmQZNyAm> .
+
+
+###  urn:webprotege:ontology:11087366-46c0-4b4d-9fe9-6c0e948d531e#awarded
+:awarded rdf:type owl:ObjectProperty ;
+         rdfs:domain <http://webprotege.stanford.edu/RBK2sbOvO3K1BtepmQZNyAm> ;
+         rdfs:range <http://webprotege.stanford.edu/RyF9jZHRbfA13qqr0y7fBm> .
+
+
+###  urn:webprotege:ontology:11087366-46c0-4b4d-9fe9-6c0e948d531e#awardedIn
+:awardedIn rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://webprotege.stanford.edu/RyF9jZHRbfA13qqr0y7fBm> ;
+           rdfs:range <http://webprotege.stanford.edu/RBK2sbOvO3K1BtepmQZNyAm> .
+
+
+###  urn:webprotege:ontology:11087366-46c0-4b4d-9fe9-6c0e948d531e#directed
+:directed rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://webprotege.stanford.edu/RCVfJWL0UyrnIpuUGLjbRKq> ;
+          rdfs:range <http://webprotege.stanford.edu/RBK2sbOvO3K1BtepmQZNyAm> .
+
+
+###  urn:webprotege:ontology:11087366-46c0-4b4d-9fe9-6c0e948d531e#hasActor
+:hasActor rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://webprotege.stanford.edu/RBK2sbOvO3K1BtepmQZNyAm> ;
+          rdfs:range <http://webprotege.stanford.edu/RBtw96Dpf96wQWdVk0DMSyX> .
+
+
+###  urn:webprotege:ontology:11087366-46c0-4b4d-9fe9-6c0e948d531e#hasDirector
+:hasDirector rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://webprotege.stanford.edu/RBK2sbOvO3K1BtepmQZNyAm> ;
+             rdfs:range <http://webprotege.stanford.edu/RCVfJWL0UyrnIpuUGLjbRKq> .
+
+
+###  urn:webprotege:ontology:11087366-46c0-4b4d-9fe9-6c0e948d531e#hasStudio
+:hasStudio rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://webprotege.stanford.edu/RBK2sbOvO3K1BtepmQZNyAm> ;
+           rdfs:range <http://webprotege.stanford.edu/RClMNSro71rG4JRlrF4scwI> .
+
+
+###  urn:webprotege:ontology:11087366-46c0-4b4d-9fe9-6c0e948d531e#produced
+:produced rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://webprotege.stanford.edu/RClMNSro71rG4JRlrF4scwI> ;
+          rdfs:range <http://webprotege.stanford.edu/RBK2sbOvO3K1BtepmQZNyAm> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  urn:webprotege:ontology:11087366-46c0-4b4d-9fe9-6c0e948d531e#awardName
+:awardName rdf:type owl:DatatypeProperty ;
+           rdfs:domain <http://webprotege.stanford.edu/RyF9jZHRbfA13qqr0y7fBm> ;
+           rdfs:range xsd:string .
+
+
+###  urn:webprotege:ontology:11087366-46c0-4b4d-9fe9-6c0e948d531e#directorName
+:directorName rdf:type owl:DatatypeProperty ;
+              rdfs:domain <http://webprotege.stanford.edu/RCVfJWL0UyrnIpuUGLjbRKq> ;
+              rdfs:range xsd:string .
+
+
+###  urn:webprotege:ontology:11087366-46c0-4b4d-9fe9-6c0e948d531e#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain <http://webprotege.stanford.edu/RBtw96Dpf96wQWdVk0DMSyX> ;
+      rdfs:range xsd:string .
+
+
+###  urn:webprotege:ontology:11087366-46c0-4b4d-9fe9-6c0e948d531e#studioname
+:studioname rdf:type owl:DatatypeProperty ;
+            rdfs:domain <http://webprotege.stanford.edu/RClMNSro71rG4JRlrF4scwI> ;
+            rdfs:range xsd:string .
+
+
+###  urn:webprotege:ontology:11087366-46c0-4b4d-9fe9-6c0e948d531e#title
+:title rdf:type owl:DatatypeProperty ;
+       rdfs:domain <http://webprotege.stanford.edu/RBK2sbOvO3K1BtepmQZNyAm> ;
+       rdfs:range xsd:string .
+
+
+###  urn:webprotege:ontology:11087366-46c0-4b4d-9fe9-6c0e948d531e#url
+:url rdf:type owl:DatatypeProperty ;
+     rdfs:domain <http://webprotege.stanford.edu/RBK2sbOvO3K1BtepmQZNyAm> ;
+     rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://webprotege.stanford.edu/R0Wh46JUivLhhiqlHCrYBP
+<http://webprotege.stanford.edu/R0Wh46JUivLhhiqlHCrYBP> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RBK2sbOvO3K1BtepmQZNyAm> ;
+                                                        rdfs:label "Thriller" .
+
+
+###  http://webprotege.stanford.edu/R7GEmjftvlpwv2pxjXnznt
+<http://webprotege.stanford.edu/R7GEmjftvlpwv2pxjXnznt> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RBK2sbOvO3K1BtepmQZNyAm> ;
+                                                        rdfs:label "Action" .
+
+
+###  http://webprotege.stanford.edu/R8eolkQzSaOA6C9fdGtsE6l
+<http://webprotege.stanford.edu/R8eolkQzSaOA6C9fdGtsE6l> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RBtw96Dpf96wQWdVk0DMSyX> ;
+                                                         rdfs:label "Supporting Actress" .
+
+
+###  http://webprotege.stanford.edu/R8uTjEeM3W1Jx9TgZPAN9Iy
+<http://webprotege.stanford.edu/R8uTjEeM3W1Jx9TgZPAN9Iy> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RClMNSro71rG4JRlrF4scwI> ;
+                                                         rdfs:label "Major Studio" .
+
+
+###  http://webprotege.stanford.edu/R93UnyvbfWmRQjVl1vgbfB6
+<http://webprotege.stanford.edu/R93UnyvbfWmRQjVl1vgbfB6> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RBK2sbOvO3K1BtepmQZNyAm> ;
+                                                         rdfs:label "Romance" .
+
+
+###  http://webprotege.stanford.edu/RBAiwrB02rfPaOhK6OAspT3
+<http://webprotege.stanford.edu/RBAiwrB02rfPaOhK6OAspT3> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RBtw96Dpf96wQWdVk0DMSyX> ;
+                                                         rdfs:label "Supporting Actor" .
+
+
+###  http://webprotege.stanford.edu/RBFkrZsNt1UuwZea55NvsOL
+<http://webprotege.stanford.edu/RBFkrZsNt1UuwZea55NvsOL> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RBK2sbOvO3K1BtepmQZNyAm> ;
+                                                         rdfs:label "Horror" .
+
+
+###  http://webprotege.stanford.edu/RBK2sbOvO3K1BtepmQZNyAm
+<http://webprotege.stanford.edu/RBK2sbOvO3K1BtepmQZNyAm> rdf:type owl:Class ;
+                                                         rdfs:label "Movie" .
+
+
+###  http://webprotege.stanford.edu/RBdsSTAMcshheMLjfOXO71Y
+<http://webprotege.stanford.edu/RBdsSTAMcshheMLjfOXO71Y> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RBtw96Dpf96wQWdVk0DMSyX> ;
+                                                         rdfs:label "Lead Actor" .
+
+
+###  http://webprotege.stanford.edu/RBfyB9pJy9aiskoF4TZxTXn
+<http://webprotege.stanford.edu/RBfyB9pJy9aiskoF4TZxTXn> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RClMNSro71rG4JRlrF4scwI> ;
+                                                         rdfs:label "Independent Studio" .
+
+
+###  http://webprotege.stanford.edu/RBtw96Dpf96wQWdVk0DMSyX
+<http://webprotege.stanford.edu/RBtw96Dpf96wQWdVk0DMSyX> rdf:type owl:Class ;
+                                                         rdfs:label "Actor" .
+
+
+###  http://webprotege.stanford.edu/RCCHOvNtTaHb7ioF4XcFqZf
+<http://webprotege.stanford.edu/RCCHOvNtTaHb7ioF4XcFqZf> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RyF9jZHRbfA13qqr0y7fBm> ;
+                                                         rdfs:label "Academy Award" .
+
+
+###  http://webprotege.stanford.edu/RCUyzczfjxIzubflly07N1L
+<http://webprotege.stanford.edu/RCUyzczfjxIzubflly07N1L> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RyF9jZHRbfA13qqr0y7fBm> ;
+                                                         rdfs:label "Golden Globe" .
+
+
+###  http://webprotege.stanford.edu/RCVfJWL0UyrnIpuUGLjbRKq
+<http://webprotege.stanford.edu/RCVfJWL0UyrnIpuUGLjbRKq> rdf:type owl:Class ;
+                                                         rdfs:label "Director" .
+
+
+###  http://webprotege.stanford.edu/RClMNSro71rG4JRlrF4scwI
+<http://webprotege.stanford.edu/RClMNSro71rG4JRlrF4scwI> rdf:type owl:Class ;
+                                                         rdfs:label "Studio" .
+
+
+###  http://webprotege.stanford.edu/RDKvaTeZITJd4ILczadiUpW
+<http://webprotege.stanford.edu/RDKvaTeZITJd4ILczadiUpW> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RCVfJWL0UyrnIpuUGLjbRKq> ;
+                                                         rdfs:label "Film director" .
+
+
+###  http://webprotege.stanford.edu/RDbndbr2ut4jrrmKtAMY3jl
+<http://webprotege.stanford.edu/RDbndbr2ut4jrrmKtAMY3jl> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RBtw96Dpf96wQWdVk0DMSyX> ;
+                                                         rdfs:label "Actress" .
+
+
+###  http://webprotege.stanford.edu/RDhuppybmoseYohOQihDUkb
+<http://webprotege.stanford.edu/RDhuppybmoseYohOQihDUkb> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RBK2sbOvO3K1BtepmQZNyAm> ;
+                                                         rdfs:label "Animation" .
+
+
+###  http://webprotege.stanford.edu/RLHLP7D2ywIcCEYz9hiH1O
+<http://webprotege.stanford.edu/RLHLP7D2ywIcCEYz9hiH1O> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RBK2sbOvO3K1BtepmQZNyAm> ;
+                                                        rdfs:label "Sci-Fi" .
+
+
+###  http://webprotege.stanford.edu/RLnJ7eHQhU9Q0Yl0jsdAmM
+<http://webprotege.stanford.edu/RLnJ7eHQhU9Q0Yl0jsdAmM> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RBK2sbOvO3K1BtepmQZNyAm> ;
+                                                        rdfs:label "Comedy" .
+
+
+###  http://webprotege.stanford.edu/RNwzQBV2ldcuNIJokjexIx
+<http://webprotege.stanford.edu/RNwzQBV2ldcuNIJokjexIx> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RBK2sbOvO3K1BtepmQZNyAm> ;
+                                                        rdfs:label "Drama" .
+
+
+###  http://webprotege.stanford.edu/Roz6pYN22pdxWAstyoVwpJ
+<http://webprotege.stanford.edu/Roz6pYN22pdxWAstyoVwpJ> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RyF9jZHRbfA13qqr0y7fBm> ;
+                                                        rdfs:label "BAFTA" .
+
+
+###  http://webprotege.stanford.edu/Rtxiq4Pp2UZc8W6Wz2P4JJ
+<http://webprotege.stanford.edu/Rtxiq4Pp2UZc8W6Wz2P4JJ> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RCVfJWL0UyrnIpuUGLjbRKq> ;
+                                                        rdfs:label "Television Director" .
+
+
+###  http://webprotege.stanford.edu/RyF9jZHRbfA13qqr0y7fBm
+<http://webprotege.stanford.edu/RyF9jZHRbfA13qqr0y7fBm> rdf:type owl:Class ;
+                                                        rdfs:label "Award" .
+
+
+###  http://webprotege.stanford.edu/Rz8Bxtd1tmmQ8yGNHg0TdZ
+<http://webprotege.stanford.edu/Rz8Bxtd1tmmQ8yGNHg0TdZ> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RBK2sbOvO3K1BtepmQZNyAm> ;
+                                                        rdfs:label "Fantasy" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  urn:webprotege:ontology:11087366-46c0-4b4d-9fe9-6c0e948d531e#Christoper_Nolan
+:Christoper_Nolan rdf:type owl:NamedIndividual ,
+                           <http://webprotege.stanford.edu/RCVfJWL0UyrnIpuUGLjbRKq> ;
+                  :directorName "Christopher Nolan"^^xsd:string .
+
+
+###  urn:webprotege:ontology:11087366-46c0-4b4d-9fe9-6c0e948d531e#Leo_di_Caprio
+:Leo_di_Caprio rdf:type owl:NamedIndividual ,
+                        <http://webprotege.stanford.edu/RBtw96Dpf96wQWdVk0DMSyX> .
+
+
+###  urn:webprotege:ontology:11087366-46c0-4b4d-9fe9-6c0e948d531e#Warner_Bros
+:Warner_Bros rdf:type owl:NamedIndividual ,
+                      <http://webprotege.stanford.edu/RClMNSro71rG4JRlrF4scwI> .
+
+
+###  urn:webprotege:ontology:11087366-46c0-4b4d-9fe9-6c0e948d531e#inception
+:inception rdf:type owl:NamedIndividual ,
+                    <http://webprotege.stanford.edu/RBK2sbOvO3K1BtepmQZNyAm> ;
+           :title "Inception"^^xsd:string .
+
+
+###  urn:webprotege:ontology:11087366-46c0-4b4d-9fe9-6c0e948d531e#oscars
+:oscars rdf:type owl:NamedIndividual ,
+                 <http://webprotege.stanford.edu/RyF9jZHRbfA13qqr0y7fBm> .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
